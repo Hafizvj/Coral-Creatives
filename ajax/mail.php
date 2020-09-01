@@ -1,12 +1,12 @@
 <?php
 parse_str($_POST['form_data'], $form);
 
-define('TO_EMAIL', 'themewar@gmail.com');
-define('SUBJECT', 'Wargency User Query');
+define('TO_EMAIL', 'hello.coralcreatives@gmail.com');
+define('SUBJECT', Coral Creatives User Query');
 define('FROM_EMAIL', $form['con_email']);
 
 $MESSAGE = 'Hi Admin, <br/><br/>';
-$MESSAGE .= 'You got an user query from WARGENCY. User details and Message are noted bellow: <br/><br/>';
+$MESSAGE .= 'You got an user query from Coral Creatives. User details and Message are noted bellow: <br/><br/>';
 $MESSAGE .= 'Name : '.$form['con_name'].'<br/>';
 $MESSAGE .= 'Email : '.$form['con_email'].'<br/>';
 if(isset($form['con_company']) && $form['con_company'] != ''):
